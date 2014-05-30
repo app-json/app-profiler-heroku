@@ -1,6 +1,6 @@
 {
   "name": "app-profiler-heroku",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Fetch addons and env data from a running Heroku app for use in creating or updating its app.json file",
   "main": "index.js",
   "scripts": {

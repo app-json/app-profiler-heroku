@@ -9,6 +9,7 @@ describe("profiler", function() {
 
   before(function(done) {
     profiler("ord", function(err, p){
+      assert(!err)
       profile = p
       done()
     })
