@@ -1,27 +1,35 @@
 {
-  "name": "heroku-app-cloner",
+  "name": "app-profiler-heroku",
   "version": "0.0.0",
-  "description": "",
+  "description": "Fetch addons and env data from a running Heroku app for use in creating or updating its app.json file",
   "main": "index.js",
   "scripts": {
-    "start": "echo no start script... yet!",
     "test": "mocha"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/app-json/app-profiler-heroku"
   },
-  "keywords": ["","",""],
-  "author": "",
+  "keywords": [
+    "app.json",
+    "heroku",
+    "env",
+    "addons"
+  ],
+  "author": "zeke",
   "license": "MIT",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/app-json/app-profiler-heroku"
   },
-  "homepage": "",
+  "homepage": "https://github.com/app-json/app-profiler-heroku",
   "devDependencies": {
     "mocha": "^1.20.0"
   },
   "dependencies": {
-    "dotenv": "^0.2.8"
+    "dotenv": "^0.2.8",
+    "flatten": "0.0.1",
+    "heroku-auth-finder": "0.0.0",
+    "heroku-client": "^1.4.0",
+    "redact-url": "^0.1.1"
   }
 }

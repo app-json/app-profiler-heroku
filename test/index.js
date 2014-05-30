@@ -2,21 +2,28 @@
 
 require("dotenv").load()
 var assert = require("assert")
+var profiler = require("..")
+var profile
 
-describe("thing", function() {
+describe("profiler", function() {
 
-  beforeEach(function() {
-    // stuff
+  before(function(done) {
+    profiler("ord", function(err, p){
+      profile = p
+      done()
+    })
   })
 
-  it("does stuff", function() {
-    assert(true)
+  it("returns an object", function() {
+    assert.equal(typeof(profile), "object")
   })
 
-  it("reads environment from .env file", function() {
-    assert.equal(process.env.FOO, "BAR")
+  it("fetches addons", function() {
+    assert(profile.addons)
   })
 
-  it("has pending stuff")
+  it("fetches env", function() {
+    assert(profile.addons)
+  })
 
 })
